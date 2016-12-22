@@ -30,10 +30,10 @@
     [rsa loadPrivateKeyFromFile: privateKeyPath password:@"88888888"];
     
     NSString *jiami = [rsa rsaEncryptString:mima];
-    NSLog(@"加密: \n%@", jiami);
+    NSLog(@"加密后: \n%@", jiami);
     
     NSString *jiemi = [rsa rsaDecryptString: jiami];
-    NSLog(@"解密: %@", jiemi);
+    NSLog(@"解密后: %@", jiemi);
 
 }
 
